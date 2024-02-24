@@ -10,12 +10,7 @@ En el directorio de trabajo ejecutar el comando necesario para crear/generar un 
       archetypeArtifactId: maven-archetype-quickstart
       ACTUALIZAR Y CREAR DEPENDENCIAS EN EL PROYECTO
 
-[](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/Captura%20de%20pantalla%202024-02-23%20190216.png)
-
-
 Se busca la [dependencia](https://mvnrepository.com/artifact/junit/junit/4.13.2) de Maven
-
-<img width="747" alt="Screenshot 2024-02-08 170607" src="https://github.com/AlejoCNYT/cvds/assets/89206637/c940bdc9-dedf-4e95-86da-1b796483fe3e">
 
 Se copia en el portapapeles la dependencia y reemplaza el pom.xml
 
@@ -31,7 +26,7 @@ Se copia en el portapapeles la dependencia y reemplaza el pom.xml
 
 se ejecutal comando `mvn package`
 
-<img width="625" alt="image" src="https://github.com/AlejoCNYT/cvds/assets/74771189/72873e1d-0071-4dcf-996e-3174bb018cb7">
+![](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/Captura%20de%20pantalla%202024-02-23%20190216.png)
 
 se ejecuta el comando `mvn test`
 
