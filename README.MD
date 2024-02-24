@@ -10,7 +10,7 @@ En el directorio de trabajo ejecutar el comando necesario para crear/generar un 
       archetypeArtifactId: maven-archetype-quickstart
       ACTUALIZAR Y CREAR DEPENDENCIAS EN EL PROYECTO
 
-<img width="754" alt="Screenshot 2024-02-08 165536" src="https://github.com/AlejoCNYT/cvds/assets/74771189/8596be8a-cdcb-4642-a306-ec8ca351945c">
+[](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/Captura%20de%20pantalla%202024-02-23%20190216.png)
 
 
 Se busca la [dependencia](https://mvnrepository.com/artifact/junit/junit/4.13.2) de Maven
