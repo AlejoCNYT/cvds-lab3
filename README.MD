@@ -40,11 +40,12 @@ se ejecuta el comando `mvn test`
 
 Realizamos el esqueleto de la aplicacion indicada en el laboratorio y ejecutamos las pruebas que se indican en el esqueleto.
 Se agregan los siguientes casos de prueba.
-• Cuando una persona esta muerta.
-• Cuando una persona es menor de edad.
-• Cuando una persona es votante (mayor de edad).
-• Cuando hay edades invalidas (edades negativas).
-• Cuando hay Id's duplicados.
+
+- Cuando una persona esta muerta.
+- Cuando una persona es menor de edad.
+- Cuando una persona es votante (mayor de edad).
+- Cuando hay edades invalidas (edades negativas).
+- Cuando hay Id's duplicados.
 
 ### EJECUTAR LAS PRUEBAS
 
