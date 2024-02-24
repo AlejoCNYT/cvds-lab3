@@ -30,10 +30,7 @@ se ejecutal comando `mvn package`
 
 se ejecuta el comando `mvn test`
 
-<img width="783" alt="image" src="https://github.com/AlejoCNYT/cvds/assets/74771189/8dc26764-af6c-4423-9713-7c4ba76e7eaf">
-
-
-
+![](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/Captura%20de%20pantalla%202024-02-23%20190225.png)
 
 ## EJERCICIO “REGISTRADURÍA”
 
