@@ -30,7 +30,7 @@ se ejecutal comando `mvn package`
 
 se ejecuta el comando `mvn test`
 
-![](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/Captura%20de%20pantalla%202024-02-23%20190225.png)
+![](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/Captura%20de%20pantalla%202024-02-23%20190922.png)
 
 ## EJERCICIO “REGISTRADURÍA”
 
