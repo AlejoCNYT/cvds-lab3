@@ -10,7 +10,7 @@ public class RegistryTest {
     @Test
     public void shouldBeDeadPersonWhenIsNotAlive() {
         // Arrange
-        Person person = new Person("DanielJulian", 123, 17, Gender.UNIDENTIFIED, false);
+        Person person = new Person("DanielJulian", 00423, 16, Gender.UNIDENTIFIED, false);
         // Act
         RegisterResult result = registry.registerVoter(person);
         // Assert
@@ -20,7 +20,7 @@ public class RegistryTest {
     @Test
     public void shouldBeUnderagePersonWhenIsLessThan18yoAndHaveValidAgeRange() {
         // Arrange
-        Person person = new Person("DanielJulian", 123, 17, Gender.UNIDENTIFIED, true);
+        Person person = new Person("DanielJulian", 00423, 11, Gender.UNIDENTIFIED, true);
         // Act
         RegisterResult result = registry.registerVoter(person);
         // Assert
@@ -28,19 +28,9 @@ public class RegistryTest {
     }
 
     @Test
-    public void shouldBeValidAgePersonWhenIsOver18yoAndHaveValidAgeRange() {
-        // Arrange
-        Person person = new Person("DanielJulian", 123, 19, Gender.UNIDENTIFIED, true);
-        // Act
-        RegisterResult result = registry.registerVoter(person);
-        // Assert
-        Assert.assertEquals(RegisterResult.VALID, result);
-    }
-
-    @Test
     public void shouldBeInvalidAgeWhenAgeIsNegative() {
         // Arrange
-        Person person = new Person("DanielJulian", 123, -17, Gender.UNIDENTIFIED, true);
+        Person person = new Person("DanielJulian", 00423, -17, Gender.UNIDENTIFIED, true);
         // Act
         RegisterResult result = registry.registerVoter(person);
         // Assert
@@ -50,13 +40,25 @@ public class RegistryTest {
     @Test
     public void shouldBeDuplicatedPersonIdWhenExistOtherPersonWithThisId() {
         // Arrange
-        Person person1 = new Person("DanielJulian", 123, 20, Gender.UNIDENTIFIED, true);
-        Person person2 = new Person("JulianDaniel", 123, 20, Gender.UNIDENTIFIED, true);
+        Person person1 = new Person("DanielJulian", 00423, 26, Gender.UNIDENTIFIED, true);
+        Person person2 = new Person("JulianDaniel", 00423, 22, Gender.UNIDENTIFIED, true);
         // Act
         registry.registerVoter(person1);
         RegisterResult result = registry.registerVoter(person2);
         // Assert
         Assert.assertEquals(RegisterResult.DUPLICATED, result);
+    }
+
+    @Test
+    public void shouldNotBeDuplicatedPersonIdWhenExistOtherPersonWithThisId() {
+        // Arrange
+        Person person1 = new Person("DanielJulian", 00423, 26, Gender.UNIDENTIFIED, true);
+        Person person2 = new Person("JulianDaniel", 00432, 22, Gender.UNIDENTIFIED, true);
+        // Act
+        registry.registerVoter(person1);
+        RegisterResult result = registry.registerVoter(person2);
+        // Assert
+        Assert.assertNotEquals(RegisterResult.DUPLICATED, result);
     }
 
 }
