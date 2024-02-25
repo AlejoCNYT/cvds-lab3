@@ -51,11 +51,10 @@ Se agregan los siguientes casos de prueba.
 
 Compilamos y ejecutamos los test con mvn test.
 
-![](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/PACKAGEL3.png)
-
-![](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/testl3.png)
+![image](https://github.com/AlejoCNYT/cvds-lab3/assets/74771189/cc8fd720-1d48-4974-9b6d-17fffb28338b)
 
 ### FINALIZAR EL EJERCICIO
+![image](https://github.com/AlejoCNYT/cvds-lab3/assets/74771189/7ccce8d9-8b36-4654-9c53-0491ef0f84db)
 
 ## EJERCICIO "DESCUENTO DE TARIFAS"
 
@@ -70,7 +69,7 @@ AeroDescuentos
 
 ```
 2.
-![image](https://github.com/AlejoCNYT/cvds/assets/74771189/0d723f8a-86b7-4756-a5c5-c2e1432d19da)
+![image](https://github.com/AlejoCNYT/cvds-lab3/assets/74771189/78aa8a36-ed90-497e-88e6-446006093b67)
 
 3.
 ```
@@ -155,15 +154,19 @@ la tarifa es de base negativa o igual a 0:
 ```
 
 
-### REALIZAR DISEÑO DE PRUEBAS
+### IMPLEMENTACIÓN DE LAS PRUEBAS
 
 Descargue el archivo aerodescuentos.jar y adicione esta nueva dependencia en el archivo pom.xml de su proyecto.
 
 Para adicionar una librería personalizada al repositorio local de maven puede ejecutar el siguiente comando.
 
-![image](https://github.com/AlejoCNYT/cvds/assets/74771189/fa109b00-180a-4d14-b84d-6996479291c7)
+´´´
+mvn install:install-file -Dfile=aerodescuentos-1.0.0.jar -DgroupId=edu.eci.cvds -DartifactId=aerodescuentos -Dversion=1.0.0 -Dpackaging=jar
 
-### IMPLEMENTACIÓN DE LAS PRUEBAS
+´´´
+![image](https://github.com/AlejoCNYT/cvds-lab3/assets/74771189/3d3cf029-3869-4ba4-9feb-b9974a9f61af)
+
+
 ```
 
 package edu.eci.cvds.tdd.aerodescuentos;
@@ -278,5 +281,5 @@ public class TarifasTest {
 ```
 
 ## Ejecución Test 
-![image](https://github.com/AlejoCNYT/cvds/assets/74771189/7b83e460-4896-4194-a1b3-eaf623cdadf2)
+![image](https://github.com/AlejoCNYT/cvds-lab3/assets/74771189/7ccce8d9-8b36-4654-9c53-0491ef0f84db)
 
