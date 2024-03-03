@@ -281,6 +281,7 @@ public class TarifasTest {
 }
 ```
 
-## Ejecución Test 
-![image](https://github.com/AlejoCNYT/cvds-lab3/assets/74771189/7ccce8d9-8b36-4654-9c53-0491ef0f84db)
+## Ejecución Package & Test 
+![image](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/Captura%20de%20pantalla%202024-03-02%20190915.png)
+![](https://github.com/AlejoCNYT/cvds-lab3/blob/main/img/Captura%20de%20pantalla%202024-03-02%20190936.png)
 
